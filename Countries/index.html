@@ -7,14 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries</title>
     <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-    <h1>Primeiro exemplo com XML</h1>
-    <p id="pgf"></p>
+
+    <header>
+        <h1>Where in the world ?</h1>
+    </header>
+
+    <section>
+        <div id="div_filters">
+            <!-- barra de pesquisa-->
+            <input type="text" value="Seach for a Country" id="input_txt">
+
+            </input>
+            <!-- selector -->
+            <select name="Filter by Region" id="select_filter" value="Filter by Region">
+                <option value="All">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </section>
+    <section>
+        <!-- bandeiras -->
+        <div id="main_div">
+
+        </div>
+    </section>
 
     <script type="module" src="./countries.js"></script>
-    <script type="module" src="./createXMLHttpRequest.js"></script>
+
 </body>
 
 </html>

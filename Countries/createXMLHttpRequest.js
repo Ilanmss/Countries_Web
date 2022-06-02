@@ -4,7 +4,7 @@ export function createXMLHttpRequest(method, url, callback, data = null) {
     xhr.open(method, url)
     xhr.send(data)
 
-    xhr.onreadystatechange = verificaAjax()
+    xhr.onreadystatechange = verificaAjax
 
     console.log(xhr)
     console.log(xhr.status)
