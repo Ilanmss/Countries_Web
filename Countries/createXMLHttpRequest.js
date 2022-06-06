@@ -1,4 +1,6 @@
 export function createXMLHttpRequest(method, url, callback, data = null) {
+    // código para aprender sobre XMLHttpRequest
+    // não utilizei ele no projeto em si, usei apenas para testes
     const xhr = new XMLHttpRequest()
 
     xhr.open(method, url)

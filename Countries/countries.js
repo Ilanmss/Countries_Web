@@ -31,26 +31,9 @@ select.addEventListener("click", function(event) {
 
 })
 
-const bandeira = document.querySelector("#main_div")
+const btn = document.getElementById('btn_back')
 
-bandeira.addEventListener("click", function(event) {
-    console.log(event.target)
-    if (event.target != bandeira) {
-        console.log("contem a classe bandeiras")
-            //detail_page()
-    }
+btn.addEventListener('click', function() {
+    window.location.reload()
+        //createFetch("GET", url)
 })
-
-function details(target) {
-    let bandeiras = document.querySelectorAll(".bandeiras")
-
-}
-
-function detail_page() {
-    window.location.href = "details.html"
-}
-
-// document.querySelector("#btn_back").addEventListener("click", function() {
-//     console.log("func chamada")
-//     window.location.href = "index.html"
-// })
